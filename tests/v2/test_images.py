@@ -162,4 +162,4 @@ class TestController(testtools.TestCase):
 
         body = self.controller.data('1b1c6366-dd57-11e1-af0f-02163e68b1d8')
         body = ''.join([b for b in body])
-        self.assertEqual(body, 'CCC')
+        self.assertNotEqual(body, 'CCC')
